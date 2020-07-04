@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+   <body>
+      <table border = 1>
+         <tr>
+            <th> HUM </th>
+            <th> TEMP </th>
+         </tr>
+      <!-- Jinja2 템플릿 엔진 문법 구문의미 -->
+      {% for row in result %}
+         <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+         </tr>
+      {% endfor %}
+      </table>
+   </body>
+</html>
